@@ -11,6 +11,7 @@ int factorial(int n)
  }
 
 int main() {
-    cout << factorial(5);
+    for (int i = 1; i <= 10; i=i+1)
+        cout << factorial(i) << endl;
     return 0;
 }
