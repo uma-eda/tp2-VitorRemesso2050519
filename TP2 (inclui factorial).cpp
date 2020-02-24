@@ -2,7 +2,7 @@
 
 using namespace std;
 
-int factorial(int n)
+double factorial(int n)
 {
    if (n == 1)
       return 1;
@@ -10,9 +10,9 @@ int factorial(int n)
       return n * factorial(n - 1);
  }
 
-int factorialnovo(int m)
+double factorialnovo(int m)
 {
-    int r = 1;
+    double r = 1;
     while (m >= 1) {
         r = r * m;
         m--;
@@ -21,7 +21,14 @@ return r;
 }
 
 int main() {
-    for (int i = 1; i <= 10; i = i + 1)
+    for (int i = 1; i <= 30; i = i + 1) {
         cout << factorial(i) << "|" << factorialnovo(i) << endl;
+    }
+    cout << "Caracteres Int:" << sizeof(int) << endl;
+    cout << "Caracteres Long Long:" << sizeof(long long) << endl;
+    cout << "Caracteres Double:" << sizeof(double) << endl;
+    cout << "INT_MIN " << INT_MIN << " INT_MAX " << INT_MAX << endl;
+    cout << "UINT_MIN " << 0 << " INT_MAX " << UINT32_MAX << endl;
+    cout << "DBL_MAX " << DBL_MAX << endl;
     return 0;
 }
