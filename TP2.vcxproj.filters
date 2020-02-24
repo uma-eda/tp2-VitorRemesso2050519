@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="factorial.cpp">
+    <ClCompile Include="TP2 %28inclui factorial%29.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
